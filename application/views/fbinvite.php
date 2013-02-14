@@ -4,8 +4,8 @@
 	 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   	  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
-      <script type="text/javascript" src="<?php echo site_url('js/fb.friend.select.js'); ?>"></script> 
-        <link rel="stylesheet" href="<?php echo site_url('css/fb.friend.select.css'); ?>" /> 
+      <script type="text/javascript" src="<?php echo site_url('js/jquery.facebook.multifriend.select.js'); ?>"></script> 
+        <link rel="stylesheet" href="<?php echo site_url('css/jquery.facebook.multifriend.select.css'); ?>" /> 
         <style> 
             body {
                 background: #fff;

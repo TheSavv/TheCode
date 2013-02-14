@@ -7,6 +7,14 @@
   <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
   <script src="js/invite.js"></script>
   <script type="text/javascript">
+    $(document).keypress(function (e) {
+      if (e.which == 13) {
+        notifyEmail();
+        return false; //to prevent the keystroke from continuing
+      }
+        
+    });
+
     function notifyEmail() {
       if (validateEmail($('#inviteEmail').val())) {
         var form_data = {
@@ -14,13 +22,13 @@
                   };
           
         $.ajax({
-                    url: "index.php/invites/save_email",
-                    type: 'POST',
-                    data: form_data,
-                    success: function(msg) {
-                      window.location.href = 'invites/moreinvites'
-                      return true;
-                    }
+                url: "index.php/main/email_invites",
+                type: 'POST',
+                data: form_data,
+                success: function(msg) {
+                  window.location.href = 'main/social_invites'
+                  return true;
+                }
         });
       }
       else
@@ -28,7 +36,7 @@
         $('#inviteEmail').effect("shake", { times:3 }, 750);
         $('#inviteEmail').val('');
       }
-    }
+  }
   </script>
   <title>The Savv</title>
 </head>

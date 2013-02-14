@@ -2,7 +2,6 @@
 <html>
 	<head>
 	  <title>Invitation The Savv</title>
-	  
 	  <link rel="stylesheet" type="text/css" href="<?php echo site_url('css/invite.css'); ?>"/>
 	  <link rel="stylesheet" type="text/css" href="<?php echo site_url('css/logoButton.css'); ?>"/>
 	  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
@@ -23,18 +22,13 @@
 		</div>
 		<div class="socialInvites">
 
-			<a href="<?php echo site_url('invites/fbinvites'); ?>" class="facebook-button" id="facebookbutton">
+			<a id='fbInvite' href="<?php echo site_url('main/facebook_invite'); ?>" class="facebook-button" id="facebookbutton">
 				<span class="fb-button-left"></span>
 				<span class="fb-button-center">Invite with Facebook</span>
 				<span class="fb-button-right"></span>
 			</a><br/>
 			
-
-			<a class='facebook-button' id='facebookbutton' href="<?php echo site_url('invites/googleinvites'); ?>">
-			<span class='gmail-button-left'></span>
-			<span class='gmail-button-center'>Invite GMail Friends</span>
-			<span class='fb-button-right'></span></a>
-			<br/>
+			<a id='gmailInvite' class="button icon chat" href="<?php echo site_url('main/gmail_invite'); ?>"><span>Invite GMail Friends</span></a>
 		
 		</div>
 	</div>
